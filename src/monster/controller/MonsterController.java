@@ -1,20 +1,23 @@
 package monster.controller;
 
+import monster.model.MarshmallowMonster;
+
 public class MonsterController
 {
 
-	public MonsterController(String name, double legCount, boolean bellybuttonPresent, int noses, int arms, int eyes)
+	private MarshmallowMonster flirp;
+
+	public MonsterController()
 	{
-		this.name = name;
-		this.legCount = legCount;
-		this.bellybuttonPresent = bellybuttonPresent;
-		this.noses = noses;
-		this.arms = arms;
-		this.eyes = eyes;
+		flirp = new MarshmallowMonster("Flirp", 2, false, 1, 2);
+
+		/*
+		 * name = "Flirp" legCount = 2 Belly button = false noses = 1 eyes = 2
+		 */
 	}
 
 	public void start()
 	{
-
+		System.out.println("Here is my MONSTER: ", flirp);
 	}
 }

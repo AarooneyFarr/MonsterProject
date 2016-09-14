@@ -18,6 +18,15 @@ public class MonsterController
 
 	public void start()
 	{
-		System.out.println("Here is my MONSTER: " + flirp);
+		System.out.println("My monster's name is " + flirp.getName());
+		if (flirp.getHasBellyButton() == true)
+		{
+			System.out.println("My monster has a bellybutton.");
+		}
+		else
+		{
+			System.out.println("My monster has no bellybutton.");
+
+		}
 	}
 }

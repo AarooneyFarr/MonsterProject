@@ -42,4 +42,37 @@ public class MarshmallowMonster
 		return description;
 	}
 
+	/*
+	 * name = "Flirp" legCount = 2 Belly button = false noses = 1 arms = 2 eyes
+	 * = 2
+	 */
+	public String getName()
+	{
+		return name;
+	}
+
+	public double getLegCount()
+	{
+		return legCount;
+	}
+
+	public boolean getHasBellyButton()
+	{
+		return hasBellyButton;
+	}
+
+	public int getNoses()
+	{
+		return noses;
+	}
+
+	public int getArms()
+	{
+		return arms;
+	}
+
+	public int getEyes()
+	{
+		return eyes;
+	}
 }

@@ -9,7 +9,7 @@ public class MonsterController
 
 	public MonsterController()
 	{
-		flirp = new MarshmallowMonster("Flirp", 2, false, 1, 2);
+		flirp = new MarshmallowMonster("Flirp", 2, false, 1, 2, 2);
 
 		/*
 		 * name = "Flirp" legCount = 2 Belly button = false noses = 1 eyes = 2
@@ -18,6 +18,6 @@ public class MonsterController
 
 	public void start()
 	{
-		System.out.println("Here is my MONSTER: ", flirp);
+		System.out.println("Here is my MONSTER: " + flirp);
 	}
 }

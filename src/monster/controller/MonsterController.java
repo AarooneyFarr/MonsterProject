@@ -20,7 +20,18 @@ public class MonsterController
 
 	public void start()
 	{
-		nameChanger();
+		
+		System.out.println("What do you want to change?");
+		String changeCheck = inputReader.nextLine();
+		if(changeCheck.equalsIgnoreCase("name") ){
+			nameChanger();
+		}
+		else if(changeCheck.equalsIgnoreCase("number of legs")){
+			legChanger();
+		}
+		
+		
+		
 		System.out.println("My monster's name is " + flirp.getName());
 		if (flirp.getHasBellyButton() == true)
 		{
@@ -39,6 +50,15 @@ public class MonsterController
 		String name = inputReader.nextLine();
 		System.out.println("The old name is: " + flirp.getName() + " The new name is: " + name);
 		flirp.setName(name);
+		inputReader.nextLine();
+		
+	}
+	
+	public void legChanger(){
+		System.out.println("How many legs should " + flirp.getName() + " have?");
+		double leg = inputReader.nextDouble();
+		System.out.println( "The new number of legs is: " + leg);
+		flirp.setLegCount(leg);
 		inputReader.nextLine();
 		
 	}

@@ -20,46 +20,94 @@ public class MonsterController
 
 	public void start()
 	{
+
+		changer();
+
 		
+
+	}
+	
+	public void changer(){
 		System.out.println("What do you want to change?");
 		String changeCheck = inputReader.nextLine();
-		if(changeCheck.equalsIgnoreCase("name") ){
+		if (changeCheck.equalsIgnoreCase("name"))
+		{
 			nameChanger();
 		}
-		else if(changeCheck.equalsIgnoreCase("number of legs")){
+		else if (changeCheck.equalsIgnoreCase("number of legs"))
+		{
 			legChanger();
 		}
-		
-		
-		
-		System.out.println("My monster's name is " + flirp.getName());
-		if (flirp.getHasBellyButton() == true)
+		else if (changeCheck.equalsIgnoreCase("number of arms"))
 		{
-			System.out.println("My monster has a bellybutton.");
+			armChanger();
+		}
+		else if (changeCheck.equalsIgnoreCase("number of noses"))
+		{
+			noseChanger();
+		}
+		else if (changeCheck.equalsIgnoreCase("number of eyes"))
+		{
+			eyesChanger();
+		}
+		else if(changeCheck.equalsIgnoreCase("nothing")){
+			System.out.println("Fine!");
 		}
 		else
 		{
-			System.out.println("My monster has no bellybutton.");
-
+			System.out.println("Your choices for things to change are: name, number of legs, number of arms, number of noses, and number of eyes.");
+			changer();
 		}
-		
 	}
-	
-	public void nameChanger(){
+
+	public void nameChanger()
+	{
 		System.out.println("What should the name of our monster be?");
 		String name = inputReader.nextLine();
 		System.out.println("The old name is: " + flirp.getName() + " The new name is: " + name);
 		flirp.setName(name);
 		inputReader.nextLine();
-		
+
 	}
-	
-	public void legChanger(){
+
+	public void noseChanger()
+	{
+		System.out.println("How many noses should our monster have?");
+		int nose = inputReader.nextInt();
+		System.out.println("The new number of noses is:" + nose);
+		flirp.setNoses(nose);
+		inputReader.nextLine();
+
+	}
+
+	public void legChanger()
+	{
 		System.out.println("How many legs should " + flirp.getName() + " have?");
 		double leg = inputReader.nextDouble();
-		System.out.println( "The new number of legs is: " + leg);
+		System.out.println("The new number of legs is: " + leg);
 		flirp.setLegCount(leg);
 		inputReader.nextLine();
-		
+
 	}
+
+	public void armChanger()
+	{
+		System.out.println("How many arms should our monster have?");
+		int arms = inputReader.nextInt();
+		System.out.println("The new number of arms is: " + arms);
+		flirp.setArms(arms);
+		inputReader.nextLine();
+
+	}
+
+	public void eyesChanger()
+	{
+		System.out.println("How many eyes should our monster have?");
+		int eyes = inputReader.nextInt();
+		System.out.println("The new number of eyes is: " + eyes);
+		flirp.setEyes(eyes);
+		inputReader.nextLine();
+
+	}
+
 }

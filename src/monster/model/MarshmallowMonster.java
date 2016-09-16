@@ -51,9 +51,19 @@ public class MarshmallowMonster
 		return name;
 	}
 
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
 	public double getLegCount()
 	{
 		return legCount;
+	}
+
+	public void setLegCount(double legCount)
+	{
+		this.legCount = legCount;
 	}
 
 	public boolean getHasBellyButton()
@@ -61,9 +71,19 @@ public class MarshmallowMonster
 		return hasBellyButton;
 	}
 
+	public void setHasBellyButton(boolean hasBellyButton)
+	{
+		this.hasBellyButton = hasBellyButton;
+	}
+
 	public int getNoses()
 	{
 		return noses;
+	}
+
+	public void setNoses(int noses)
+	{
+		this.noses = noses;
 	}
 
 	public int getArms()
@@ -71,8 +91,18 @@ public class MarshmallowMonster
 		return arms;
 	}
 
+	public void setArms(int arms)
+	{
+		this.arms = arms;
+	}
+
 	public int getEyes()
 	{
 		return eyes;
+	}
+
+	public void setEyes(int eyes)
+	{
+		this.eyes = eyes;
 	}
 }

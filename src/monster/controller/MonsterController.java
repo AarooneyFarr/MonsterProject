@@ -22,12 +22,12 @@ public class MonsterController
 	{
 
 		changer();
-
-		
+		loopMonster();
 
 	}
-	
-	public void changer(){
+
+	public void changer()
+	{
 		System.out.println("What do you want to change?");
 		String changeCheck = inputReader.nextLine();
 		if (changeCheck.equalsIgnoreCase("name"))
@@ -50,7 +50,8 @@ public class MonsterController
 		{
 			eyesChanger();
 		}
-		else if(changeCheck.equalsIgnoreCase("nothing")){
+		else if (changeCheck.equalsIgnoreCase("nothing"))
+		{
 			System.out.println("Fine!");
 		}
 		else
@@ -108,6 +109,16 @@ public class MonsterController
 		flirp.setEyes(eyes);
 		inputReader.nextLine();
 
+	}
+
+	private void loopMonster()
+	{
+		int test = 0;
+		while (test <= 10)
+		{
+			System.out.print("First Monser Words " + flirp);
+			test++;
+		}
 	}
 
 }
